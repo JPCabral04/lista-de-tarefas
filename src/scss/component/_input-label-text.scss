@@ -34,7 +34,7 @@
 
       cursor: pointer;
 
-      &::checked {
+      &:checked {
          background-color: var(--primary);
       }
    }
