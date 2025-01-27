@@ -15,14 +15,17 @@ import { IListItems } from '../../interface/IListItems.interface';
 export class ListComponent {
   public addItem = signal(true);
 
-  private setListItems = signal<IListItems[]>([this.parseItem()]);
-  getListItem = this.setListItems.asReadonly();
+  private listItems = signal<IListItems[]>(this.loadItems());
+  public items = this.listItems.asReadonly();
 
-  private parseItem(){
+  private loadItems(): IListItems[] {
     return JSON.parse(localStorage.getItem('@my-list') || '[]');
   }
 
-  public getInputAndAddItem(value : IListItems){
-    localStorage.setItem('@my-list',JSON.stringify([value]))
-  };
-}
+  public getInputAndAddItem(value: IListItems): void {
+    const updatedItems = [...this.listItems(), value];
+    localStorage.setItem('@my-list', JSON.stringify(updatedItems));
+    this.listItems.set(updatedItems);
+  }
+};
+
