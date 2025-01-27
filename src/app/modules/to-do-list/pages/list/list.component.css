@@ -1,1 +1,17 @@
-/*# sourceMappingURL=list.component.css.map */
+:host {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+:host div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+:host div.container .btn-primary, :host div.container div {
+  margin-top: 30px;
+  width: 100%;
+}/*# sourceMappingURL=list.component.css.map */
