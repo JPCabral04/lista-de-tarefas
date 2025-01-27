@@ -103,10 +103,10 @@ ul {
   content: url("../../assets/icons/delete.svg");
 }
 .btn.btn-danger-circle::after {
-  content: url("../../assets/icons/add.svg");
+  content: url("../../assets/icons/delete.svg");
 }
 .btn.btn-primary-circle::after {
-  content: url("../../assets/icons/delete.svg");
+  content: url("../../assets/icons/add.svg");
 }
 
 .input-label-text {

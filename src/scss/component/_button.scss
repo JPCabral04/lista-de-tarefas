@@ -49,13 +49,13 @@
 
    &.btn-danger-circle{
       &::after {
-         content: url('../../assets/icons/add.svg');
+         content: url('../../assets/icons/delete.svg');
       }
    }
 
    &.btn-primary-circle{
       &::after {
-         content: url('../../assets/icons/delete.svg');
+         content: url('../../assets/icons/add.svg');
       }
    }
 

@@ -11,7 +11,7 @@
   align-items: center;
   flex-direction: column;
 }
-:host div.container .btn-primary, :host div.container div {
+:host div.container .btn-primary, :host div.container app-input-add-item {
   margin-top: 30px;
   width: 100%;
 }/*# sourceMappingURL=list.component.css.map */
