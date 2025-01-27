@@ -14,4 +14,26 @@
 :host div.container .btn-primary, :host div.container app-input-add-item {
   margin-top: 30px;
   width: 100%;
+}
+:host main.container {
+  height: calc(100vh - 130px - 90px);
+  height: calc(100dvh - 130px - 90px);
+  overflow-y: auto;
+}
+:host main.container::--webkit-scrollbar {
+  width: 4px;
+}
+:host main.container::--webkit-scrollbar-track {
+  background-color: var(--black-010);
+}
+:host main.container::--webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+:host footer {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid var(--black-010);
 }/*# sourceMappingURL=list.component.css.map */

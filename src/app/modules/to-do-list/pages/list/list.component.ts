@@ -27,5 +27,10 @@ export class ListComponent {
     localStorage.setItem('@my-list', JSON.stringify(updatedItems));
     this.listItems.set(updatedItems);
   }
+
+  public deleteAllItems(){
+    localStorage.removeItem('@my-list');
+    this.listItems.set(this.loadItems());
+  }
 };
 
